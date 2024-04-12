@@ -1,117 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <div class="container p-4 flex">
-        <!--the checkbox did not work well  with tailwind-->
-        <input type="checkbox" id="" class="form-checkbox h-6 w-6 bg-white border-2 border-gray-300 rounded-full appearance-none checked:bg-blue-600 mr-3 mt-2 " checked>
-    <h1 class="text-3xl font-bold mb-4 text-black">Tasks</h1>
-     <div id="dots1" class="flex gap-1 ml-24 mt-4">
-  <div class="bg-purple-600 p-1 rounded-full w-2 h-2 "></div>
-  <div class="bg-purple-600 p-1 rounded-full  w-2 h-2"></div>
-  <div class="bg-purple-600 p-1 rounded-full  w-2 h-2"></div>
-     </div>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container p-4">
+      <div class="flex">
+        <span
+          class="text-white text-1xl text-center rounded-full bg-blue-700 shadow-lg shadow-indigo-1000/50 h-6 w-6 mt-2"
+        >
+          &check;</span
+        >
+        &nbsp;
+        <h1 class="text-3xl">Tasks</h1>
+        <br /><br />
+        <div class="ml-auto">
+          <div class="bg-zinc-200 rounded-full p-2">
+            <div
+              class="bg-blue-500 w-2 h-2 rounded-full mr-1 inline-block"
+            ></div>
+            <div
+              class="bg-blue-500 w-2 h-2 rounded-full mr-1 inline-block"
+            ></div>
+            <div class="bg-blue-500 w-2 h-2 rounded-full inline-block"></div>
+          </div>
+        </div>
+      </div>
+      <br>
+      <ul type="none">
+        <li class="flex items-center mb-2">
+          <input
+            type="checkbox"
+            class="form-checkbox h-5 w-5 text-blue-700 mr-2"
+          />
+          <span class="text-zinc-700">Landing Page Design</span>
+        </li>
+        <li class="flex items-center mb-2">
+          <input
+            type="checkbox"
+            class="form-checkbox h-5 w-5 text-blue-600 mr-2"
+          />
+          <span class="text-zinc-700">Mobile App Design</span>
+        </li>
+        <li class="flex items-center mb-2">
+          <input
+            type="checkbox"
+            class="form-checkbox h-5 w-5 text-blue-600 mr-2"
+          />
+          <span class="text-zinc-700">Dashboard Builder</span>
+        </li>
+        <li class="flex items-center mb-2">
+          <input
+            type="checkbox"
+            class="form-checkbox h-5 w-5 text-blue-600 mr-2"
+          />
+          <span class="text-zinc-700">Landing Page Design</span>
+        </li>
+        <li class="flex items-center mb-2">
+          <input
+            type="checkbox"
+            class="form-checkbox h-5 w-5 text-blue-600 mr-2"
+          />
+          <span class="text-zinc-700">Mobile App Design</span>
+        </li>
+      </ul>
     </div>
-    <div class="flex flex-col">
-        <div class="w-full p-2 flex">
-            <input id="check" type="checkbox" id="task1" value="landing page design" class="form-checkbox h-6 w-4 mt-1 text-blue-600 hover:shadow-md cursor-pointer">
-            <label for="task1" class="ml-2 text-lg font-bold text-gray-800">Landing page design</label>
-<div id="dots1" class="grid grid-cols-2 p-1 gap-1">
-  <div class="flex flex-col">
-    <div class="bg-black p-1 rounded-full w-2 h-2"></div><br>
-    <div class="bg-black p-1 rounded-full  w-2 h-2"></div><br>
-    <div class="bg-black p-1 rounded-full  w-2 h-2"></div>
-  </div>
-  <div class="flex flex-col">
-    <div class="bg-black p-1 rounded-full w-2 h-2 "></div><br>
-    <div class="bg-black p-1 rounded-full  w-2 h-2"></div><br>
-    <div class="bg-black p-1 rounded-full  w-2 h-2"></div>
-  </div>
-</div>
-        </div>
-        <div class="w-full p-2 flex">
-            <input id="check" type="checkbox" id="task2" value="contact form" checked class=" h-6 w-4 mt-1 text-blue-600 hover:shadow-md cursor-pointer">
-            <label  class="ml-2 text-lg font-bold text-gray-800">Mobile App Design</label>
-       <div id="dots1" class="grid grid-cols-2 p-1 gap-1 ml-3">
-  <div class="flex flex-col">
-    <div class="bg-black p-1 rounded-full w-2 h-2"></div><br>
-    <div class="bg-black p-1 rounded-full  w-2 h-2"></div><br>
-    <div class="bg-black p-1 rounded-full  w-2 h-2"></div>
-  </div>
-  <div class="flex flex-col">
-    <div class="bg-black p-1 rounded-full w-2 h-2 "></div><br>
-    <div class="bg-black p-1 rounded-full  w-2 h-2"></div><br>
-    <div class="bg-black p-1 rounded-full  w-2 h-2"></div>
-  </div>
-</div>
-        </div>
-        <div class="w-full p-2 flex ">
-            <input id="check" type="checkbox" id="task3" value="about page" class="rounded-lg form-checkbox h-6 w-4 mt-1 text-blue-600 hover:shadow-md cursor-pointer">
-            <label for="task3" class="ml-2 text-lg font-bold text-gray-800">Dashboard Builder</label>
-       <div id="dots1" class="grid grid-cols-2 p-1 gap-1 ml-3">
-  <div class="flex flex-col ml-2">
-    <div class="bg-black p-1 rounded-full w-2 h-2"></div><br>
-    <div class="bg-black p-1 rounded-full  w-2 h-2"></div><br>
-    <div class="bg-black p-1 rounded-full  w-2 h-2"></div>
-  </div>
-  <div class="flex flex-col">
-    <div class="bg-black p-1 rounded-full w-2 h-2 "></div><br>
-    <div class="bg-black p-1 rounded-full  w-2 h-2"></div><br>
-    <div class="bg-black p-1 rounded-full  w-2 h-2"></div>
-  </div>
-       </div>
-        </div>
-        <div class="w-full p-2 flex">
-            <input id="check" type="checkbox" id="task4" value="services page" class="form-checkbox h-6 w-4 mt-1 text-blue-600 hover:shadow-md cursor-pointer">
-            <label for="task4" class="ml-2 text-lg font-bold text-gray-800">Landing Page Design</label>
-        <div id="dots1" class="grid grid-cols-2 p-1 gap-1">
-  <div class="flex flex-col">
-    <div class="bg-black p-1 rounded-full w-2 h-2"></div><br>
-    <div class="bg-black p-1 rounded-full  w-2 h-2"></div><br>
-    <div class="bg-black p-1 rounded-full  w-2 h-2"></div>
-  </div>
-  <div class="flex flex-col">
-    <div class="bg-black p-1 rounded-full w-2 h-2 "></div><br>
-    <div class="bg-black p-1 rounded-full  w-2 h-2"></div><br>
-    <div class="bg-black p-1 rounded-full  w-2 h-2"></div>
-  </div></div>
-        </div>
-        <div class = "w-full p-2 flex ">
-            <input id="check" type="checkbox" id="task4" value="services page" class="form-checkbox h-6 w-4 mt-1 text-blue-600 hover:shadow-md cursor-pointer">
-            <label for="task4" class="ml-2 text-lg font-bold text-gray-800">Services page</label>
-        <div id="dots2" class="grid grid-cols-2 p-1 gap-1 ml-16 pl-4">
-  <div class="flex flex-col">
-    <div class="bg-black p-1 rounded-full w-2 h-2"></div><br>
-    <div class="bg-black p-1 rounded-full  w-2 h-2"></div><br>
-    <div class="bg-black p-1 rounded-full  w-2 h-2"></div>
-  </div>
-  <div class="flex flex-col">
-    <div class="bg-black p-1 rounded-full w-2 h-2 "></div><br>
-    <div class="bg-black p-1 rounded-full  w-2 h-2"></div><br>
-    <div class="bg-black p-1 rounded-full  w-2 h-2"></div>
-  </div>
-        </div>
-    </div>
-    <style>
-        <!--not yet perfect in aligning-->
-        #dots1{
-            line-height: 1px;
-            padding-left: 60%;
-        }
-        #dots2{
-            line-height: 1px;
-            padding-left: 60%;
-        }
-    </style>
-    
-</div>
-</div>
-</div>
-</body>
+
+
+
+
+  </body>
 </html>
